@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foodieee-App</title>
 
-<!-- link to css -->
-<link rel="stylesheet" href="/assets/main.css">
+  <!-- link to css -->
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
+
 <body class="bg-blue-50">
   <header class="p-5 mx-auto text-center bg-blue-500">
     <h3 class="font-bold text-2xl text-white">Foodieee"😋"App</h3>
   </header>
-  <main class="">
-    <div class="flex mt-5">
-      <div class="mx-auto space-x-2 p-11 bg-white ">
-        <input class="border-none py-2 px-5 outline-none w-80 bg-slate-100 rounded-md" type="text" placeholder="I like to eat..">
-        <button class="bg-blue-500 py-2 px-5 rounded-xl text-white font-medium">Add</button>
-      </div>
-    </div>
 
-    <div class="flex mt-5  ">
-      <div class="bg-white mx-auto">
-        <ul class="w-96 space-y-2 p-3 " style="width: 500px;">
-          <li class="px-4 text-sm  text-gray-500 font-normal py-3 border w-full border-gray-300 rounded-md">Sambar</li>
-          <li class="px-4 text-sm  text-gray-500 font-normal py-3 border w-full border-gray-300 rounded-md">Rasam</li>
-          <li class="px-4 text-sm  text-gray-500 font-normal py-3 border w-full border-gray-300 rounded-md">Curd</li>
-        </ul>
-        
+  <main class="flex">
+    <div class="mx-auto  mt-10 space-y-7">
+      <div class="space-x-2 p-6 mb-5 bg-white shadow-xl">
+        <input id="input-food" class="border-none py-2 px-5 outline-none w-96 bg-slate-100 rounded-md" type="text"
+          placeholder="I like to eat..">
+        <button id="input-button"
+          class="bg-blue-500 py-2 px-5 rounded-xl text-white font-medium hover:bg-blue-600">Add</button>
       </div>
+
+      <ul id="food-container" class="w-96 space-y-2 p-7 bg-white shadow-xl" style="width: 500px;">
+        <li class="food-li hover:bg-blue-500 hover:font-medium hover:text-white"><div>Briyani</div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg></div>
+      </li>
+
+        <li class="food-li hover:bg-blue-500 hover:font-medium hover:text-white flex justify-between items-center"><div>Sambar</div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg></div>
+        </li>
+
+        <li class="food-li hover:bg-blue-500 hover:font-medium hover:text-white flex justify-between items-center"><div>Curd</div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg></div>
+        </li>
+      </ul>
+
 
     </div>
   </main>
-  
+
+
+  <script src="assets/main.js"></script>
 </body>
+
 </html>
